@@ -195,33 +195,79 @@ var pp = {"ajax_url":"https://waktutemu.id/wp-admin/admin-ajax.php"};
 <style>
 
 body{
-background:
-linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780056559/WhatsApp_Image_2026-05-29_at_19.00.47_woeqay.jpg');
-
-background-size: cover;
-background-position: center;
-background-attachment: fixed;
+background-color:#000;
+overflow-x:hidden;
 }
 
-/* tambahan foto dekor */
+/* FOTO 1 */
 body::before{
 content:"";
 position:fixed;
 top:0;
 left:0;
-width:100%;
-height:100%;
+width:50%;
+height:50%;
 
-background:
-url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780056559/WhatsApp_Image_2026-05-29_at_19.00.52_qbeozi.jpg') left top / 200px no-repeat,
+background:url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780056559/WhatsApp_Image_2026-05-29_at_19.00.47_woeqay.jpg');
 
-url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780056560/WhatsApp_Image_2026-05-29_at_19.00.54_n5m5to.jpg') right top / 200px no-repeat,
+background-size:cover;
+background-position:center;
 
-url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780056560/WhatsApp_Image_2026-05-29_at_19.00.56_wna3va.jpg') center bottom / 250px no-repeat;
+opacity:0.35;
+z-index:-4;
+}
 
-opacity:0.25;
-pointer-events:none;
+/* FOTO 2 */
+html::before{
+content:"";
+position:fixed;
+top:0;
+right:0;
+width:50%;
+height:50%;
+
+background:url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780056559/WhatsApp_Image_2026-05-29_at_19.00.52_qbeozi.jpg');
+
+background-size:cover;
+background-position:center;
+
+opacity:0.35;
+z-index:-3;
+}
+
+/* FOTO 3 */
+body::after{
+content:"";
+position:fixed;
+bottom:0;
+left:0;
+width:50%;
+height:50%;
+
+background:url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780056560/WhatsApp_Image_2026-05-29_at_19.00.54_n5m5to.jpg');
+
+background-size:cover;
+background-position:center;
+
+opacity:0.35;
+z-index:-2;
+}
+
+/* FOTO 4 */
+html::after{
+content:"";
+position:fixed;
+bottom:0;
+right:0;
+width:50%;
+height:50%;
+
+background:url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780056560/WhatsApp_Image_2026-05-29_at_19.00.56_wna3va.jpg');
+
+background-size:cover;
+background-position:center;
+
+opacity:0.35;
 z-index:-1;
 }
 
