@@ -201,61 +201,36 @@ body,
 .elementor-widget-wrap{
 
 background-size: cover !important;
-background-position: center center !important;
+background-position: center !important;
 background-repeat: no-repeat !important;
 
-animation: weddingSlide 20s infinite ease-in-out;
-transition: all 2s ease-in-out;
+animation: bgslide 20s infinite;
 
 }
 
-/* Overlay cinematic */
-body::before{
-content:"";
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.30);
-pointer-events:none;
-z-index:0;
-}
-
-/* Slideshow Premium */
-@keyframes weddingSlide{
+/* slideshow foto */
+@keyframes bgslide{
 
 0%{
 background-image:url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780056559/WhatsApp_Image_2026-05-29_at_19.00.47_woeqay.jpg');
-transform:scale(1);
 }
 
 25%{
 background-image:url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780056559/WhatsApp_Image_2026-05-29_at_19.00.52_qbeozi.jpg');
-transform:scale(1.05);
 }
 
 50%{
 background-image:url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780056560/WhatsApp_Image_2026-05-29_at_19.00.54_n5m5to.jpg');
-transform:scale(1);
 }
 
 75%{
 background-image:url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780056560/WhatsApp_Image_2026-05-29_at_19.00.56_wna3va.jpg');
-transform:scale(1.05);
 }
 
 100%{
 background-image:url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780056559/WhatsApp_Image_2026-05-29_at_19.00.47_woeqay.jpg');
-transform:scale(1);
 }
 
-}
-
-/* Blur elegan */
-.elementor-background-overlay{
-backdrop-filter: blur(2px);
-background: rgba(255,255,255,0.03) !important;
 }
 
 </style>
