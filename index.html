@@ -194,43 +194,35 @@ var pp = {"ajax_url":"https://waktutemu.id/wp-admin/admin-ajax.php"};
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <style>
 
-body,
-.elementor-section,
-.elementor-container,
-.elementor-column,
-.elementor-widget-wrap{
+body{
+background:
+linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780056559/WhatsApp_Image_2026-05-29_at_19.00.47_woeqay.jpg');
 
-background-size: cover !important;
-background-position: center !important;
-background-repeat: no-repeat !important;
-
-animation: bgslide 20s infinite;
-
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
 }
 
-/* slideshow foto */
-@keyframes bgslide{
+/* tambahan foto dekor */
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
 
-0%{
-background-image:url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780056559/WhatsApp_Image_2026-05-29_at_19.00.47_woeqay.jpg');
-}
+background:
+url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780056559/WhatsApp_Image_2026-05-29_at_19.00.52_qbeozi.jpg') left top / 200px no-repeat,
 
-25%{
-background-image:url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780056559/WhatsApp_Image_2026-05-29_at_19.00.52_qbeozi.jpg');
-}
+url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780056560/WhatsApp_Image_2026-05-29_at_19.00.54_n5m5to.jpg') right top / 200px no-repeat,
 
-50%{
-background-image:url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780056560/WhatsApp_Image_2026-05-29_at_19.00.54_n5m5to.jpg');
-}
+url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780056560/WhatsApp_Image_2026-05-29_at_19.00.56_wna3va.jpg') center bottom / 250px no-repeat;
 
-75%{
-background-image:url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780056560/WhatsApp_Image_2026-05-29_at_19.00.56_wna3va.jpg');
-}
-
-100%{
-background-image:url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780056559/WhatsApp_Image_2026-05-29_at_19.00.47_woeqay.jpg');
-}
-
+opacity:0.25;
+pointer-events:none;
+z-index:-1;
 }
 
 </style>
