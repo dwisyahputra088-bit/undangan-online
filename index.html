@@ -193,24 +193,29 @@ var pp = {"ajax_url":"https://waktutemu.id/wp-admin/admin-ajax.php"};
 <meta name="msapplication-TileImage" content="https://waktutemu.id/wp-content/uploads/2025/08/cropped-26-copy-3-270x270.webp" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <style>
-#coverdesktopwt{
+/* MOBILE & DESKTOP COVER */
+#coverdesktopwt,
+#isiwt,
+.elementor-element-51557b05,
+.elementor-element-72444af2,
+.elementor-element-4e998591{
+    
     background-image: url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780046840/Yuli_Riki_xhptkl.png') !important;
+
     background-size: cover !important;
-    background-position: center !important;
+    background-position: center center !important;
     background-repeat: no-repeat !important;
-    min-height: 100vh;
 }
 
-#isiwt{
-    background-image: url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780046840/Yuli_Riki_xhptkl.png') !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-}
-
-/* hilangkan overlay bawaan */
+/* HAPUS OVERLAY BAWAAN */
 .elementor-background-overlay{
     background: transparent !important;
+    opacity: 0 !important;
+}
+
+/* HAPUS BACKGROUND DEFAULT ELEMENTOR */
+.elementor-element[data-settings*="background_background"]{
+    background-image: none !important;
 }
 </style></head>
 <body class="wp-singular post-template-default single single-post postid-41749 single-format-standard wp-custom-logo wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-canvas elementor-kit-4 elementor-page-19000">
