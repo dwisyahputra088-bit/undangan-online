@@ -193,12 +193,7 @@ var pp = {"ajax_url":"https://waktutemu.id/wp-admin/admin-ajax.php"};
 <meta name="msapplication-TileImage" content="https://waktutemu.id/wp-content/uploads/2025/08/cropped-26-copy-3-270x270.webp" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <style>
-
-.bg1,
-.bg2,
-.bg3,
-.bg4,
-.bg5{
+.bg1,.bg2,.bg3,.bg4,.bg5{
 position:fixed;
 top:0;
 left:0;
@@ -206,37 +201,33 @@ width:100%;
 height:100%;
 background-size:cover;
 background-position:center;
-z-index:-5;
+background-repeat:no-repeat;
+z-index:-1;
 opacity:0;
 animation-duration:25s;
 animation-iteration-count:infinite;
 }
 
-/* FOTO 1 */
 .bg1{
 background-image:url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780046840/Yuli_Riki_xhptkl.png');
 animation-name:bg1;
 }
 
-/* FOTO 2 */
 .bg2{
 background-image:url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780056560/WhatsApp_Image_2026-05-29_at_19.00.54_n5m5to.jpg');
 animation-name:bg2;
 }
 
-/* FOTO 3 */
 .bg3{
 background-image:url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780056560/WhatsApp_Image_2026-05-29_at_19.00.56_wna3va.jpg');
 animation-name:bg3;
 }
 
-/* FOTO 4 */
 .bg4{
 background-image:url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780056559/WhatsApp_Image_2026-05-29_at_19.00.52_qbeozi.jpg');
 animation-name:bg4;
 }
 
-/* FOTO 5 */
 .bg5{
 background-image:url('https://res.cloudinary.com/daz6lyq1e/image/upload/v1780056559/WhatsApp_Image_2026-05-29_at_19.00.47_woeqay.jpg');
 animation-name:bg5;
@@ -267,6 +258,13 @@ animation-name:bg5;
 0%,79%{opacity:0;}
 }
 
+body,
+.elementor-section,
+.elementor-container,
+.elementor-column,
+.elementor-widget-wrap{
+background:none !important;
+}
 </style>
 
 </head>
