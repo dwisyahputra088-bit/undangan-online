@@ -253,10 +253,15 @@ input, textarea, select {
 }
 
 /* Countdown digit warna hitam */
-.elementor-countdown-digits {
+.elementor-countdown-digits,
+.elementor-countdown-label,
+.elementor-countdown-item,
+.elementor-countdown-wrapper {
     color: #000000 !important;
 }
-.elementor-countdown-label {
+
+/* Pastikan countdown tidak ikut putih dari global */
+.elementor-countdown-wrapper * {
     color: #000000 !important;
 }
 </style>
