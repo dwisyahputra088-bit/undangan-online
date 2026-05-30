@@ -251,6 +251,14 @@ a, a:visited, a:hover {
 input, textarea, select {
     border-color: rgba(255, 255, 255, 0.4) !important;
 }
+
+/* Countdown digit warna hitam */
+.elementor-countdown-digits {
+    color: #000000 !important;
+}
+.elementor-countdown-label {
+    color: #000000 !important;
+}
 </style>
 
 </head>
@@ -743,88 +751,10 @@ var _0x1cbde2=_0xcc13;(function(_0x2aae72,_0x168f65){var _0x11c670=_0xcc13,_0x46
                 </div>
                                                 </div>
                                 </div>
-                                <div class="elementor-element elementor-element-6c888ed animate zoom-out elementor-widget elementor-widget-html" data-id="6c888ed" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+                                <div class="elementor-element elementor-element-6c888ed animate zoom-out elementor-countdown--label-block elementor-widget elementor-widget-countdown" data-id="6c888ed" data-element_type="widget" data-e-type="widget" data-widget_type="countdown.default">
                                 <div class="elementor-widget-container">
-<style>
-.countdown-custom {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    padding: 10px 16px;
-    font-family: "Poppins", Sans-serif;
-}
-.countdown-item {
-    text-align: center;
-    min-width: 65px;
-}
-.countdown-digit {
-    font-size: 32px;
-    font-weight: 700;
-    color: #ffffff;
-    line-height: 1.2;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
-}
-.countdown-label {
-    font-size: 12px;
-    color: rgba(255,255,255,0.8);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-.countdown-separator {
-    font-size: 28px;
-    font-weight: 700;
-    color: rgba(255,255,255,0.5);
-    line-height: 1.2;
-    padding-top: 2px;
-}
-</style>
-<div class="countdown-custom" id="countdownTimer">
-    <div class="countdown-item">
-        <div class="countdown-digit" id="cd-days">00</div>
-        <div class="countdown-label">Hari</div>
-    </div>
-    <div class="countdown-separator">:</div>
-    <div class="countdown-item">
-        <div class="countdown-digit" id="cd-hours">00</div>
-        <div class="countdown-label">Jam</div>
-    </div>
-    <div class="countdown-separator">:</div>
-    <div class="countdown-item">
-        <div class="countdown-digit" id="cd-minutes">00</div>
-        <div class="countdown-label">Menit</div>
-    </div>
-    <div class="countdown-separator">:</div>
-    <div class="countdown-item">
-        <div class="countdown-digit" id="cd-seconds">00</div>
-        <div class="countdown-label">Detik</div>
-    </div>
-</div>
-<script>
-(function() {
-    var weddingDate = new Date("2026-06-06T08:30:00+07:00").getTime();
-    function updateCountdown() {
-        var now = new Date().getTime();
-        var diff = weddingDate - now;
-        if (diff <= 0) {
-            document.getElementById("cd-days").innerText = "00";
-            document.getElementById("cd-hours").innerText = "00";
-            document.getElementById("cd-minutes").innerText = "00";
-            document.getElementById("cd-seconds").innerText = "00";
-            return;
-        }
-        var days = Math.floor(diff / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((diff % (1000 * 60)) / 1000);
-        document.getElementById("cd-days").innerText = days < 10 ? "0" + days : days;
-        document.getElementById("cd-hours").innerText = hours < 10 ? "0" + hours : hours;
-        document.getElementById("cd-minutes").innerText = minutes < 10 ? "0" + minutes : minutes;
-        document.getElementById("cd-seconds").innerText = seconds < 10 ? "0" + seconds : seconds;
-    }
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
-})();
-</script>
+                                                        <div class="elementor-countdown-wrapper" data-date="1780705800">
+                        <div class="elementor-countdown-item"><span class="elementor-countdown-digits elementor-countdown-days"></span> <span class="elementor-countdown-label">Hari</span></div><div class="elementor-countdown-item"><span class="elementor-countdown-digits elementor-countdown-hours"></span> <span class="elementor-countdown-label">Jam</span></div><div class="elementor-countdown-item"><span class="elementor-countdown-digits elementor-countdown-minutes"></span> <span class="elementor-countdown-label">Menit</span></div><div class="elementor-countdown-item"><span class="elementor-countdown-digits elementor-countdown-seconds"></span> <span class="elementor-countdown-label">Detik</span></div>            </div>
                                                 </div>
                                 </div>
                                 <div class="elementor-element elementor-element-2742e628 elementor-widget elementor-widget-spacer" data-id="2742e628" data-element_type="widget" data-e-type="widget" data-widget_type="spacer.default">
@@ -2879,7 +2809,39 @@ window.addEventListener("scroll",function(){var e,t;e=document.querySelectorAll(
 }
 
 </style>
-        <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a0341a80d92203d4',t:'MTc4MDA0MzA3NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+        <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a0341a80d92203d4',t:'MTc4MDA0MzA3NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+<script>
+// Countdown standalone - berjalan tanpa Elementor Pro
+(function(){
+    var weddingDate = new Date("2026-06-06T08:30:00+07:00").getTime();
+    function updateCountdown(){
+        var now = new Date().getTime();
+        var diff = weddingDate - now;
+        var daysEl = document.querySelector('.elementor-countdown-days');
+        var hoursEl = document.querySelector('.elementor-countdown-hours');
+        var minutesEl = document.querySelector('.elementor-countdown-minutes');
+        var secondsEl = document.querySelector('.elementor-countdown-seconds');
+        if(!daysEl) return;
+        if(diff <= 0){
+            daysEl.innerText = "00";
+            hoursEl.innerText = "00";
+            minutesEl.innerText = "00";
+            secondsEl.innerText = "00";
+            return;
+        }
+        var days = Math.floor(diff / (1000*60*60*24));
+        var hours = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
+        var minutes = Math.floor((diff % (1000*60*60)) / (1000*60));
+        var seconds = Math.floor((diff % (1000*60)) / 1000);
+        daysEl.innerText = days < 10 ? "0"+days : days;
+        hoursEl.innerText = hours < 10 ? "0"+hours : hours;
+        minutesEl.innerText = minutes < 10 ? "0"+minutes : minutes;
+        secondsEl.innerText = seconds < 10 ? "0"+seconds : seconds;
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+})();
+</script></body>
 </html>
 <!--
 Performance optimized by Redis Object Cache. Learn more: https://wprediscache.com
